@@ -5,7 +5,7 @@ class CoordinatesService
       f.params[:location] = location
     end
     json = JSON.parse(response.body, symbolize_names: true)
-    byebug
+    json[:results][0][:locations][0][:latLng]
   end
 
   def self.connection
