@@ -75,6 +75,8 @@ GEM
       faraday-net_http (~> 2.0)
       ruby2_keywords (>= 0.0.4)
     faraday-net_http (2.0.1)
+    fast_jsonapi (1.5)
+      activesupport (>= 4.2)
     ffi (1.15.5)
     globalid (1.0.0)
       activesupport (>= 5.0)
@@ -167,6 +169,7 @@ DEPENDENCIES
   byebug
   dotenv-rails
   faraday (~> 2.2)
+  fast_jsonapi (~> 1.5)
   httparty (~> 0.20.0)
   listen (~> 3.3)
   puma (~> 5.0)
