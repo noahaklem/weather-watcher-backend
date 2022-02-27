@@ -1,4 +1,4 @@
-class ForecastSerializer.rbSerializer
+class ForecastSerializer
   include FastJsonapi::ObjectSerializer
   attributes 
 end
