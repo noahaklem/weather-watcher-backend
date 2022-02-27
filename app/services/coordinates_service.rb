@@ -6,6 +6,7 @@ class CoordinatesService
     end
     json = JSON.parse(response.body, symbolize_names: true)
     json[:results][0][:locations][0][:latLng]
+    # results look like this: {:lat=>39.738453, :lng=>-104.984853}
   end
 
   def self.connection
