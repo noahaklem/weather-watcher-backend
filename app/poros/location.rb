@@ -5,4 +5,7 @@ class Location
     @latitude = data[:lat]
     @longitude = data[:lng]
   end
+
+  # take location instance and forward to the weather_api
+
 end
