@@ -1,8 +1,8 @@
 ## Facts
-1. Weather api requires lat and long to get weather for location
+1. Weather api requires lat and long to get weather for location *
   => google api for geocoding free?
   => mapquest api for geocoding (recommended by Kathy) free?
-  2. use mapquest to get lat and long
-3. Log location for each lat and long in class
-4. Plug location class into weather api
+  2. use mapquest to get lat and long *
+3. Log location for each lat and long in class *
+4. Plug location class into weather api *
 5. Turn those results into a forecast
