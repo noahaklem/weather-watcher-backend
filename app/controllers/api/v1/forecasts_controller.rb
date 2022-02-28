@@ -1,7 +1,8 @@
-class Api::V1::ForecastController < ApplicationController
+class Api::V1::ForecastsController < ApplicationController
 
   def index
-    
+    forecast = ForecastFacade.get_forecast("great falls")
+    render json: ForecastSerializer.new(forecast)
   end
 
   def create
