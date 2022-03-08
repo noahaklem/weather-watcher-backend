@@ -6,7 +6,7 @@ class Api::V1::ForecastsController < ApplicationController
   end
 
   def create
-    forecast = ForecastFacade.get_forecast(params[:city_name])
+    forecast = ForecastFacade.get_forecast(params[:city])
     render json: ForecastSerializer.new(forecast)
     # I will need a way to start the coordinate services and weather services I created with params[:location]
   end
@@ -14,6 +14,6 @@ class Api::V1::ForecastsController < ApplicationController
   private
 
   def forecast_params
-    params.require(:location).permit(:city_name)
+    params.require(:location).permit(:city)
   end
 end
