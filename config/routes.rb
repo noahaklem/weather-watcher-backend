@@ -7,7 +7,7 @@ Rails.application.routes.draw do
       resources :sessions, only: [:create]
       post '/login', to: 'auth#create'
       post '/signup', to: 'users#create'
-
+      delete '/', to: 'auth#delete'
     end
   end
 end
