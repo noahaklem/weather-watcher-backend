@@ -48,3 +48,5 @@ gem "faraday", "~> 2.2"
 gem "fast_jsonapi", "~> 1.5"
 
 gem "jwt", "~> 2.3"
+
+gem "active_model_serializers", "~> 0.10.13"

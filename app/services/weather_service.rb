@@ -1,9 +1,9 @@
 class WeatherService
-  def self.get_forecast(coordinates)
+  def self.get_forecast(location)
     response = connection.get('data/2.5/onecall') do |f|
       f.params[:appid] = ENV['WEATHER_API_KEY']
-      f.params[:lat] = coordinates.latitude
-      f.params[:lon] = coordinates.longitude
+      f.params[:lat] = location.latitude
+      f.params[:lon] = location.longitude
       f.params[:units] = 'imperial'
       f.params[:exclude] = 'minutely, hourly'
     end

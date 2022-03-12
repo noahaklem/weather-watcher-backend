@@ -1,7 +1,8 @@
 class Api::V1::ForecastsController < ApplicationController
 
   def index
-    forecast = ForecastFacade.get_forecast("great falls")
+    # take user locations and put them into ForecastFacade
+    forecast = ForecastFacade.get_forecast('denver')
     render json: ForecastSerializer.new(forecast)
   end
 
