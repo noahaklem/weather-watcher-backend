@@ -8,17 +8,16 @@ class Api::V1::UsersController < ApplicationController
   end
 
   def create
-    byebug
-    user = User.create(user_params)
-    if user.valid?
+    user = User.new(user_params)
+    if user.save
       token = encode_token(user_id: user.id)
       render json: {
-        data: ActiveModelSerializers::SerializableResource.new(user, each_serializer: UserSerializer),
+        user: ActiveModelSerializers::SerializableResource.new(user, each_serializer: UserSerializer),
         jwt: token
       }
     else
       render json: { 
-        error: 'failed to create user' 
+        error: user.errors.full_messages
       }, 
         status: :unprocessable_entity
     end
