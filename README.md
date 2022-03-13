@@ -14,7 +14,7 @@
 
 ## This project is accompanied by https://github.com/noahaklem/weather-watcher-frontend
 
-Weather Watch is a backend RESTful api that make calls to two external apis. The api responds to:
+Weather Watch is a backend RESTful api that make calls to two external apis. The api responds to the following endpoints:
 
 <ul align='center'>
   <li>get api/v1/forecasts</li>
@@ -25,11 +25,45 @@ Weather Watch is a backend RESTful api that make calls to two external apis. The
   <li>post '/signup'</li>
 </ul>
 
-# A note on External API Keys and .env file
+# A Note on External API Keys and .env File
 
-The external api's called are : 'https://api.openweathermap.org/' , 'http://www.mapquestapi.com/'. These api's require keys to work.
+The external api's called are : 
+<ul>
+  <li><a href='https://api.openweathermap.org/'>OpenWeather:</a>
+    <p>This api retrieves weather information any location across the globe. Most api's are paid on requests.</p>
+  </li>
+  <li><a href='http://www.mapquestapi.com/'>MapQuestApi:</a>
+    <p>This is a geocoding api for any location across the globe. Most api's are paid on requests.</p>
+  </li>
+</ul> 
+<p>** These apis require keys to work. This project makes use of, and walks through, a .env file that stores these keys but is not included in your download. You will need to sign up and retrieve api keys in order for this application to work. How you choose to plug these api keys into your fetch calls, is up to you. </p>
 
-This project makes use of a .env file that stores these keys but is not included in your download. You will need to sign up and retrieve api keys in order for this application to work. How you choose to plug these api keys into your fetch calls, is up to you.
+# Installation
+
+In the command line run the following:
+
+1. `$ bundle install`
+2. `$ rails db:migrate`
+
+# Setup API Keys
+
+1. Create a .env in the root folder of the project
+2. Navigate to the folder
+3. Add your api keys with the following format:
+  'COORD_API_KEY'='your api key here'
+  'WEATHER_API_KEY'='your api key here'
+4. Add your .env file to your gitignore
+5. You can now access your keys anywhere in your code with ENV['NAME_OF_KEY']
+
+# A
+
+
+
+
+
+
+
+# Contents
 
 
 
