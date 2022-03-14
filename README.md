@@ -12,7 +12,7 @@
   <a href="mailto:noahaklem@gmail.com?subject=Hello%20Ileri,%20From%20Github"><img src="https://img.shields.io/badge/gmail-%23D14836.svg?&style=for-the-badge&logo=gmail&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
 
-## This project is accompanied by https://github.com/noahaklem/weather-watcher-frontend
+### This project is accompanied by https://github.com/noahaklem/weather-watcher-frontend
 
 Weather Watch is a backend RESTful api that make calls to two external apis. The api responds to the following endpoints:
 
@@ -54,17 +54,6 @@ In the command line run the following:
   'WEATHER_API_KEY'='your api key here'
 4. Add your .env file to your gitignore
 5. You can now access your keys anywhere in your code with ENV['NAME_OF_KEY']
-
-# A
-
-
-
-
-
-
-
-# Contents
-
 
 
 

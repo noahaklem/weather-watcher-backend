@@ -7,11 +7,8 @@ class Api::V1::ForecastsController < ApplicationController
   end
 
   def create
-    if logged_in
-      forecast = ForecastFacade.get_forecast({current_user, params[:city]})
-      debugger
-      render json: ForecastSerializer.new(forecast)
-    end
+    forecast = ForecastFacade.get_forecast(params[:city])
+    render json: ForecastSerializer.new(forecast)
     # I will need a way to start the coordinate services and weather services I created with params[:location]
   end
 
